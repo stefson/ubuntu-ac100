@@ -1,0 +1,48 @@
+[Toplevel top-panel]
+expand=true
+orientation=top
+size=30
+
+[Object menu]
+object-iid=PanelInternalFactory::MenuButton
+toplevel-id=top-panel
+pack-type=start
+pack-index=0
+
+[Object browser]
+object-iid=PanelInternalFactory::Launcher
+@instance-config/location="file:///usr/share/applications/midori.desktop"
+toplevel-id=top-panel
+pack-type=start
+pack-index=1
+
+[Object files]
+object-iid=PanelInternalFactory::Launcher
+@instance-config/location="file:///usr/share/applications/nautilus.desktop"
+toplevel-id=top-panel
+pack-type=start
+pack-index=2
+
+[Object windows]
+object-iid=WnckletFactory::WindowListApplet
+toplevel-id=top-panel
+pack-type=start
+pack-index=3
+
+[Object indicators]
+object-iid=IndicatorAppletCompleteFactory::IndicatorAppletComplete
+toplevel-id=top-panel
+pack-type=end
+pack-index=0
+
+[Object forceclose]
+object-iid=PanelInternalFactory::ActionButton:force-quit
+toplevel-id=top-panel
+pack-type=end
+pack-index=1
+
+[Object mount]
+object-iid=DriveMountAppletFactory::DriveMountApplet
+toplevel-id=top-panel
+pack-type=end
+pack-index=2

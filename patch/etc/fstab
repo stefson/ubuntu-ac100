@@ -1,0 +1,2 @@
+/dev/mmcblk0p7 / ext4 rw,noatime,commit=30,barrier=1,data=ordered 0 0
+/dev/mmcblk0p4 none swap sw 0 0
